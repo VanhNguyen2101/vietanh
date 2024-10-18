@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mua Hang</title>
+    <link type="text/css" rel="stylesheet" href="MuaHang.css">
+</head>
+<body>
+    <div class="header">
+        <div class="app">
+        <div class="header">
+            <div class="grid">
+                <nav class="header_nav">
+                  <ul class="header_nav_list">
+                     <li class="header_nav_list_item"> Mua ban dien thoai </li>
+                     <li class="header_nav_list_item"> Lien He</li>
+                  </ul>
+                  <ul class="header_nav_list">
+                     <li class="header_nav_item"><a href="#"class="header_nav_item_link"><i class="fa-solid fa-circle-info"></i>Thong tin
+                    
+                   </li>
+                </a>
+                     <li class="header_nav_item"><a href="Dangnhap.html"class="header_nav_item_link"><i class="fa-solid fa-user"></i>Dang nhap </a></li>
+                     <li class="header_nav_item"><a href="#"class="header_nav_item_link">Dang ki </a></li>
+                     <li class="header_nav_item"><i class="fa-solid fa-question"></i>Tro giup</li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    <div class="containner">
+          <table>
+            <td> <h2> Thong tin san pham</h2>
+              <div class="SlideSanPham">
+                <img class="mySlides" src="AnhSanPham/AnhDTHcu/dien-thoai-oppo-a7-425484.jpg" style="height: 400px;">
+                <img class="mySlides" src="AnhSanPham/AnhDTHcu/iphone-13-blue-1-600x600.jpg" style="height: 400px;">
+                <button class="Nut_Trai" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="Nut_Phai" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+            </td>
+            <td>
+              <div class="NoiDungSanPham">
+                <div class="TieuDe">
+                  <h2> Dien thoai Samsung</h2>
+                </div>
+                <div class="NoiDung">
+                  <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti sit tempore veniam dignissimos provident, temporibus vero mollitia quae optio dolorem ad assumenda minima qui voluptatibus suscipit, fugit, soluta maxime eum?</h2>
+                </div> 
+                <td>
+                  <div class="Button_MuaHang">
+                    <button type="button">Mua Hang</button>
+                  </div>
+                </td>
+                <td>
+                  <div class="Button_Themvaogiohang">
+                    <button type="button">Them vao gio hang</button>
+                  </div>
+                </td>
+              </div>  
+            </td>
+          </table>
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </div>   
+    <div class="footer">
+
+    </div>
+</body>
+</html>
